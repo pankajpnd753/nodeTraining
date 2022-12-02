@@ -1,0 +1,24 @@
+=> object.findIndex(a => a.value) will return the actual index of the value
+=> console.log(object?.value || "else part") will be the condition instead of if else 
+Example : 
+        obj = {
+            key1; {
+                key2:{
+                    key3: {
+
+                    }
+                }
+            }
+        }
+
+actual condition :
+if(key1 in obj){
+    if(key2 in obj){
+        if(key3 in obj){
+        
+        }
+    }
+}
+
+shorten Condition :
+    console.log(obj?.key1?.key2?.key3 || "else part")

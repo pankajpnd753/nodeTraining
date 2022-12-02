@@ -1,0 +1,21 @@
+
+    <table border="1px" style="background-color: #7590ba;color: #fff;">
+        <tr>
+            <th>Photo</th>
+            <th>First Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+        <% for(const user of userlist){ %>
+        <tr>
+            <td><img src="<%= user.picture.thumbnail %>" alt=""></td>
+            <td><%= user.name.first %></td>
+            <td><%= user.gender %></td>
+            <td><%= user.dob.age %></td>
+        </tr>
+        <% } %>
+        <tr>
+            <td colspan="3">Average Age</td>
+            <td><%= averageAge %></td>
+        </tr>
+    </table>
