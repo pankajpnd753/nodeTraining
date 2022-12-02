@@ -15,8 +15,8 @@ async function main(){
 
     app.use('/api/products', require('./api_products/products.routes'));
 
-    app.listen(port, () => {
-        console.log(`Server started on port ${port}!`);
+    app.listen(process.env.port || 3000, () => {
+        console.log(`Server started`);
       });
 }
 
