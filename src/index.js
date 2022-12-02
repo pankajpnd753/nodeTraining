@@ -2,7 +2,6 @@ const express = require("express")
 const mongoose = require("mongoose")
 
 require('dotenv').config()
-const port = 5001;
 
 async function main(){
     console.log("Connecting to MongoDb.....",process.env.MONGO_URL);
